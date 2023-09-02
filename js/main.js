@@ -9,7 +9,7 @@ window.onload = () => {
 document.addEventListener("DOMContentLoaded", function () {
     const algodao = document.getElementById("algodao");
     const janela = document.getElementById("janela");
-    const resetButton = document.getElementById("reset");
+    const resetarBotao = document.getElementById("reset");
 
     let currentPlayer = "X";
     let gameOver = false;
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    resetButton.addEventListener("click", () => {
+    resetarBotao.addEventListener("click", () => {
         boardState.fill("");
         gameOver = false;
         janela.textContent = "";
